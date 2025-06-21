@@ -4,13 +4,16 @@ Este projeto é um sideproject desenvolvido para gerenciar a operação da minha
 ## Estrutura do projeto
 ```
 ├── data/                   # Diretório de permanência de dados
-│   └── ip.txt              # Arquivo para permanência do IP anterior
+│   ├── ip.txt              # Arquivo para permanência do IP anterior
+│   └── records_info.txt    # Arquivo contendo informações dos records do domínio
 ├── ddns/                   # Módulo principal com funções
 │   ├── __init__.py         # Inicializador do módulo Python 'ddns'
-│   ├── cloudflare_api.py   # Funções para interação com a API do Cloudflare
+│   ├── cloudflare_api.py   # Função para interação com a API do Cloudflare
 │   ├── ip_manager.py       # Funções para obtenção e armazenamento do IP anterior
-│   └── ip_service.py       # Função para obtenção do IP atual
+│   ├── ip_service.py       # Função para obtenção do IP atual
+│   └── logger.py           # Parametrização de logging de informações no terminal
 ├── scripts/                # Scripts executáveis
+│   ├── get_record_id.txt   # Script auxiliar para obter o record ID do domínio na CloudFlare
 │   └── update_ip.py        # Script principal que executa o processo (entrypoint)
 ├── example.env             # Arquivo template para variáveis de ambiente (renomeie para .env)
 ├── .python-version         # Versão do Python utilizada no projeto
