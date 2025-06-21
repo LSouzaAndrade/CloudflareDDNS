@@ -8,7 +8,7 @@ Este projeto é um sideproject desenvolvido para gerenciar a operação da minha
 │   └── records_info.txt    # Arquivo contendo informações dos records do domínio
 ├── ddns/                   # Módulo principal com funções
 │   ├── __init__.py         # Inicializador do módulo Python 'ddns'
-│   ├── cloudflare_api.py   # Funções para interação com a API do Cloudflare
+│   ├── cloudflare_api.py   # Função para interação com a API do Cloudflare
 │   ├── ip_manager.py       # Funções para obtenção e armazenamento do IP anterior
 │   ├── ip_service.py       # Função para obtenção do IP atual
 │   └── logger.py           # Parametrização de logging de informações no terminal
